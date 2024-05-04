@@ -36,7 +36,6 @@ apt update
 ```  
 apt install nano wireshark net-tools tcpdump  bridge-utils hostapd dnsmasq make git iproute2 mousepad gedit
 ```  
-```  
 for my connexion internet : wlp3s0 </br>
 for sharing internet : wlx001c50b41782 </br>
 </br>
