@@ -35,7 +35,24 @@ apt update
 ```  
 ```  
 apt install nano wireshark net-tools tcpdump  bridge-utils hostapd dnsmasq make git iproute2 mousepad gedit tshark
-```  
+```
+```
+ip addr add  192.168.1.1/24 dev wlx001c50b41782
+```
+or
+```
+ifconfig wlx001c50b41782 192.168.1.1 255.255.255.0
+```
+```
+git clone https://github.com/oblique/create_ap
+```
+```
+cd create_ap/
+```
+```
+make install
+```
+
 for my connexion internet : wlp3s0 </br>
 for sharing internet : wlx001c50b41782 </br>
 </br>
