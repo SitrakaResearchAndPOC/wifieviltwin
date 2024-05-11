@@ -54,6 +54,9 @@ cd create_ap/
 ```
 make install
 ```
+```
+exit
+```
 
 for my connexion internet : wlp3s0 </br>
 for sharing internet : wlx001c50b41782 </br>
@@ -66,6 +69,14 @@ fourth parameter of create_ap is password </br>
 ```  
 docker exec -ti wifieviltwin bash create_ap/create_ap wlx001c50b41782 wlp3s0 MyAccessPoint
 ```
+```
+xhost +
+```
+```
+docker exec -ti wifieviltwin wireshark
+```  
+# SAVING
+
 ```  
 docker ps
 ```  
@@ -76,6 +87,8 @@ docker commit <id> wifieviltwin
 ```  
 docker save wifieviltwin -o wifieviltwin.tar.gz
 ```
+
+
 # LOAD AND RUN
 ```
 docker image -i wifieviltwin.tar.gz
