@@ -113,3 +113,14 @@ fourth parameter of create_ap is password </br>
 ```  
 docker exec -ti wifieviltwin bash create_ap/create_ap wlx001c50b41782 wlp3s0 MyAccessPoint
 ```
+```
+xhost +
+```
+```
+docker exec -ti wifieviltwin wireshark
+```  
+
+# Testing at web site: 
+```
+http://testphp.vulnweb.com/login.php
+```
